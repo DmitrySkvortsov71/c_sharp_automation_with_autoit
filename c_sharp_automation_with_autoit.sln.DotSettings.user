@@ -4,6 +4,7 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=7ead4006_002D6136_002D4ff1_002Db37e_002D4f27ccfdae43/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TestGroupCreation" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;NUnit3x::A14D5D45-1B32-44C4-A0D1-C9C0905AC209::.NETFramework,Version=v4.7.2::c_sharp_automation_with_autoit.GroupCreationTests.TestGroupCreation&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::A14D5D45-1B32-44C4-A0D1-C9C0905AC209::.NETFramework,Version=v4.7.2::c_sharp_automation_with_autoit.GroupDeletionTests.GroupDeletionTest&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestRunner/SpawnedProcessesKnownList/=AddressBook_002Eexe/@EntryIndexedValue">KillOrphaned</s:String></wpf:ResourceDictionary>

@@ -11,7 +11,7 @@ namespace c_sharp_automation_with_autoit
 
     public ApplicationManager()
     {
-      const string appFullPath = @"C:\Users\dscwo\source\repos\+addressbool_app_soft\AddressBook.exe";
+      const string appFullPath = @"C:\Users\dscwo\source\repos\+addressbook_app_soft\AddressBook.exe";
       aux = new AutoItX3();
 
       // run application
@@ -19,7 +19,7 @@ namespace c_sharp_automation_with_autoit
       
       aux.WinWait(WinTitle);
       // aux.WinActivate(WinTitle);
-      // aux.WinWaitActive(WinTitle);
+      aux.WinWaitActive(WinTitle);
 
       groupHelper = new GroupsHelper(this);
     }

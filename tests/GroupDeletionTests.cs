@@ -2,7 +2,8 @@
 
 namespace c_sharp_automation_with_autoit
 {
-  public class GroupCreationTests : TestBase
+  
+  public class GroupDeletionTests : TestBase
   {
     public static object[] NewGroupData =
     {
@@ -14,23 +15,25 @@ namespace c_sharp_automation_with_autoit
     
     [Test]
     [TestCaseSource(nameof(NewGroupData))]
-    public void TestGroupCreation()
+    public void GroupDeletionTest(GroupData newGroup)
     {
       var oldGroups = app.Groups.GetGroupList();
-      var newGroup = new GroupData()
+      
+      if (oldGroups.Count <= 1) // we couldn't delete the only group
       {
-          Name = "tempo"
-              
-      };
-
-      app.Groups.Add(newGroup);
-
+        app.Groups.Add(newGroup);
+        oldGroups = app.Groups.GetGroupList();
+      }
+      
+      app.Groups.Remove(1);
+      
       var newGroups = app.Groups.GetGroupList();
-      oldGroups.Add(newGroup);
+      oldGroups.RemoveAt(1);
       oldGroups.Sort();
       newGroups.Sort();
       
       Assert.AreEqual(oldGroups, newGroups);
+
     }
   }
 }
