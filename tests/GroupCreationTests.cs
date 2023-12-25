@@ -14,14 +14,9 @@ namespace c_sharp_automation_with_autoit
     
     [Test]
     [TestCaseSource(nameof(NewGroupData))]
-    public void TestGroupCreation()
+    public void TestGroupCreation(GroupData newGroup)
     {
       var oldGroups = app.Groups.GetGroupList();
-      var newGroup = new GroupData()
-      {
-          Name = "tempo"
-              
-      };
 
       app.Groups.Add(newGroup);
 
